@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aslam Portfolio</title>
+    <script>
+      (function redirectToSpa() {
+        var pathname = window.location.pathname;
+        var search = window.location.search ? window.location.search.replace(/^\?/, '&') : '';
+        var hash = window.location.hash || '';
+        var redirectTarget =
+          pathname
+            .replace(/&/g, '~and~') + search;
+
+        window.location.replace('/aslam/?p=' + redirectTarget + hash);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
